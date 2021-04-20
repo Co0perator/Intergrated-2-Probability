@@ -2,7 +2,7 @@ import random
 import time
 
 while True:
-    query = input("Do you want 40 Coin Flips or 50 Dice Rolls? (Type coin or dice): ")
+    query = input("Do you want Coin Flip or Dice Roll? (Type coin or dice): ")
     Fl = query[0].lower()
     if query == '' or not Fl in ['c', 'd']:
         print('Please answer with Dice or Coin!')
@@ -12,7 +12,11 @@ if Fl == 'c':
 
     total_heads = 0
     total_tails = 0
-    count = 40
+
+    count_raw = input("Enter the number of times you want to Coin Flip: ")
+    time.sleep(0.5)
+
+    count = int(count_raw)
 
     while count > 0:
 
@@ -44,7 +48,10 @@ elif Fl == 'd':
     total_4 = 0
     total_5 = 0
     total_6 = 0
-    count = 50
+
+    count_raw = input("Enter the amount of times you want to Dice Roll: ")
+
+    count = int(count_raw)
 
     while count > 0:
 
