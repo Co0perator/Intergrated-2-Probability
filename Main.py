@@ -134,7 +134,7 @@ elif Fl == 's':
     count = int(count_raw)
     p = count
 
-    x = input("How many colors do you want? ")
+    x = input("How many colors do you want? (Out of 6)")
     r = int(x)
 
     while count > 0:
